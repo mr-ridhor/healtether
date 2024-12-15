@@ -37,18 +37,18 @@ const detailTypeSchema = z.object({
 
 
 const page = () => {
-  const form = useForm<detailsTpe>({
-    resolver: zodResolver(detailTypeSchema),
-    defaultValues: {
-      email: "",
-     name:"",
-     info:"",
-     phone:"",
-     speciality:"",
-     address:"",
+  // const form = ({
+  //   resolver: zodResolver(detailTypeSchema),
+  //   defaultValues: {
+  //     email: "",
+  //    name:"",
+  //    info:"",
+  //    phone:"",
+  //    speciality:"",
+  //    address:"",
 
-    },
-  });
+  //   },
+  // });
   return (
     <div className="w-full flex items-center justify-center ">
       <div className="w-[95%] grid grid-cols-1 lg:grid-cols-2 gap-x-3  ">
@@ -76,7 +76,7 @@ const page = () => {
           </div>
           </div>
           <div className="">
-            <Form {...form}>
+            {/* <Form {...form}>
               <form>
                 <div className="">
                   <FormLabel>
@@ -85,7 +85,7 @@ const page = () => {
                   {/* <Input> */}
                 </div>
               </form>
-            </Form>
+            </Form> */}
           </div>
         </div>
       </div>
