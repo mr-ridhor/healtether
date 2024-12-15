@@ -3,35 +3,35 @@ import React from "react";
 
 import PrescriptionPreview from "./component/PrescriptionPreview";
 import { Camera } from "lucide-react";
-import { Form, FormLabel } from "@/components/ui/form";
-// import { Input } from "@/components/ui/input";
-import { useForm } from "react-hook-form";
-import { z } from 'zod';
-import { zodResolver } from "@hookform/resolvers/zod";
+// import { Form, FormLabel } from "@/components/ui/form";
+// // import { Input } from "@/components/ui/input";
+// import { useForm } from "react-hook-form";
+// import { z } from 'zod';
+// import { zodResolver } from "@hookform/resolvers/zod";
 
 
 
- type detailsTpe={
-name:string;
-speciality:string;
-info:string;
-address:string;
-phone:string;
-email:string;
+//  type detailsTpe={
+// name:string;
+// speciality:string;
+// info:string;
+// address:string;
+// phone:string;
+// email:string;
 
 
-}
+// }
 
-const detailTypeSchema = z.object({
-  name: z.string().min(1, "Name is required"),
-  speciality: z.string().min(1, "Speciality is required"),
-  info: z.string().optional(),
-  address: z.string().min(1, "Address is required"),
-  phone: z
-    .string()
-    .regex(/^\+?[1-9]\d{1,14}$/, "Invalid phone number format"),
-  email: z.string().email("Invalid email format"),
-});
+// const detailTypeSchema = z.object({
+//   name: z.string().min(1, "Name is required"),
+//   speciality: z.string().min(1, "Speciality is required"),
+//   info: z.string().optional(),
+//   address: z.string().min(1, "Address is required"),
+//   phone: z
+//     .string()
+//     .regex(/^\+?[1-9]\d{1,14}$/, "Invalid phone number format"),
+//   email: z.string().email("Invalid email format"),
+// });
 
 // TypeScript type inferred from the Zod schema
 
@@ -75,18 +75,7 @@ const page = () => {
           <Camera />
           </div>
           </div>
-          <div className="">
-            {/* <Form {...form}>
-              <form>
-                <div className="">
-                  <FormLabel>
-                  Doctor’s Name
-                  </FormLabel>
-                  {/* <Input> */}
-                </div>
-              </form>
-            </Form> */}
-          </div>
+         
         </div>
       </div>
     </div>
